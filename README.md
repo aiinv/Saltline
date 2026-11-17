@@ -2,7 +2,7 @@
 
 单文件 WebGL 第一人称射击游戏。基于 Three.js r180，所有模型、纹理与音效均为程序化生成，无外部资源请求。
 
-代码底层保留了 `SALTLINE_SKY`、`SALTLINE_SHADOW`、`SALTLINE_POST` 等原作着色器标识。显示层的中文署名已统一由「几猫」更正为「盐线」。
+代码底层保留了 `SALTLINE_SKY`、`SALTLINE_SHADOW`、`SALTLINE_POST` 等原作着色器标识。显示层的中文署名已统一更正为「盐线」。
 
 ## 在线玩
 
