@@ -23,17 +23,24 @@ https://aiinv.github.io/Saltline/original.html?show=mats
 
 九个入口如下：
 
-| 参数 | 展示内容 | 附加参数 |
-| --- | --- | --- |
-| `?show=mats` | **材质库**：以球体、地面与立方体三种载体陈列全部程序化材质（金属、油漆、木材、混凝土、玻璃、网布等），含贴花预览 | `&only=paint_red,steel` 按材质名筛选，逗号分隔 |
-| `?show=props` | **场景道具**：集装箱（20 尺／40 尺／高柜）、隔离墩、灯杆、发电机、垃圾箱、工具车等，按尺寸自动排布 | `&names=container20,light_mast` 按道具名筛选 |
-| `?show=enemies` | **敌人单位**：机械猎犬与机械飞鸥的静态姿态、巡逻行为与战斗状态 | `&eshow=gull\|hound\|fight\|dead\|both`，默认 `both` |
-| `?show=weapon` | **武器检视**：盐线九式突击步枪的侧面、右侧、顶部、手部、枪口、瞄具、下挂等分解视角，以及开火／换弹／空仓／瞄准／冲刺动作 | `&wpose=hip\|ads\|fire\|reload\|empty\|sprint\|side\|right\|top\|hands\|rhand\|muzzle\|optic\|lower`，默认 `hip`；另可加 `&wt=<秒>`、`&cam=x,y,z,tx,ty,tz`、`&fov=N`、`&exposure=N` |
-| `?show=fx` | **特效演示**：爆炸、火花、烟尘、弹孔与命中反馈，可冻结在指定时间点逐帧观察 | `&fxshow=<类型>`，默认 `all`；`&fxage=<秒>`、`&fxsize=<倍率>` 可控制爆炸帧与规模 |
-| `?show=render` | **渲染管线**：粗糙度／金属度渐变材质球阵列与测试几何体，用于观察色调映射、阴影与后处理效果 | 可加 `&cam=`、`&fov=`、`&exposure=` |
-| `?show=ground` | **地面系统**：程序化地面（沥青、混凝土、积水等）与参考道具的组合展示 | 可加 `&cam=`、`&exposure=` |
-| `?show=backdrop` | **远景与天空**：起重机、货轮、疏散艇与天空盒四个独立镜头 | `&bshow=crane\|ship\|boat\|sky`，默认 `crane` |
-| `?show=level` | **完整关卡**：集装箱堆场、仓库、码头与中继站的整场景，可观察关卡布局与动态更新 | 可加 `&cam=`、`&fov=` |
+| 入口 | 展示内容 | 常用附加参数 |
+| :--- | :--- | :--- |
+| `?show=mats` | **材质库**：以球体、地面、立方体三种载体陈列程序化材质（金属、油漆、木材、混凝土、玻璃、网布等），含贴花预览 | `&only=paint_red,steel`<br>按材质名筛选，逗号分隔 |
+| `?show=props` | **场景道具**：集装箱（20 尺／40 尺／高柜）、隔离墩、灯杆、发电机、垃圾箱、工具车，按尺寸自动排布 | `&names=container20,light_mast`<br>按道具名筛选 |
+| `?show=enemies` | **敌人单位**：机械猎犬与机械飞鸥的静态、巡逻、战斗姿态 | `&eshow=gull\|hound`<br>另有 `fight\|dead\|both`，默认 `both` |
+| `?show=weapon` | **武器检视**：盐线九式突击步枪的侧面／右侧／顶部／手部／枪口／瞄具／下挂分解视角，以及开火／换弹／空仓／瞄准／冲刺动作 | `&wpose=hip\|ads\|fire\|reload`<br>另有 `&wt=`、`&cam=`、`&fov=`、`&exposure=` |
+| `?show=fx` | **特效演示**：爆炸、火花、烟尘、弹孔与命中反馈，可冻结逐帧观察 | `&fxshow=<类型>`、`&fxage=<秒>`、`&fxsize=<倍率>`<br>默认 `all` |
+| `?show=render` | **渲染管线**：粗糙度／金属度渐变材质球与测试几何体，观察色调映射、阴影与后处理效果 | `&cam=`、`&fov=`、`&exposure=` |
+| `?show=ground` | **地面系统**：沥青、混凝土、积水等程序化地面与参考道具组合 | `&cam=`、`&exposure=` |
+| `?show=backdrop` | **远景与天空**：起重机、货轮、疏散艇、天空盒四个独立镜头 | `&bshow=crane\|ship`<br>另有 `boat\|sky`，默认 `crane` |
+| `?show=level` | **完整关卡**：集装箱堆场、仓库、码头与中继站的整场景，可观察布局与动态更新 | `&cam=`、`&fov=` |
+
+### 检视页参数速查（完整枚举）
+
+- **敌人** `&eshow=`：`gull`（飞鸥）｜`hound`（猎犬）｜`fight`（战斗）｜`dead`（死亡）｜`both`（默认）
+- **武器** `&wpose=`：`hip`（默认）｜`ads`｜`fire`｜`reload`｜`empty`｜`sprint`｜`side`｜`right`｜`top`｜`hands`｜`rhand`｜`muzzle`｜`optic`｜`lower`；另有 `&wt=<秒>`、`&cam=x,y,z,tx,ty,tz`、`&fov=N`、`&exposure=N`
+- **特效** `&fxshow=`：默认 `all`；`&fxage=<秒>`、`&fxsize=<倍率>` 控制爆炸帧与规模
+- **远景** `&bshow=`：`crane`（默认）｜`ship`｜`boat`｜`sky`
 
 说明：这些页面是只读检视场景，不加载玩家、任务与 HUD；参数与游戏本体完全兼容，可与 `&q=`、`&bench=`、`&noaudio=1` 等组合使用。模块名区分大小写，必须使用表中给出的小写形式。
 
