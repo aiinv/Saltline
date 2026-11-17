@@ -1,16 +1,18 @@
-# 几猫 3A 大作
+# Saltline（盐线）
 
 单文件 WebGL 第一人称射击游戏。基于 Three.js r180，所有模型、纹理与音效均为程序化生成，无外部资源请求。
+
+代码底层保留了 `SALTLINE_SKY`、`SALTLINE_SHADOW`、`SALTLINE_POST` 等原作着色器标识。显示层的中文署名已统一由「几猫」更正为「盐线」。
 
 ## 在线玩
 
 | 版本 | 链接 |
 | --- | --- |
-| 低延时版（首页，推荐） | https://aiinv.github.io/jimao-3a/ |
-| 低延时 + 一键性能模式 | https://aiinv.github.io/jimao-3a/?fast=1 |
-| 原版 V1（未改动） | https://aiinv.github.io/jimao-3a/original.html |
+| 低延时版（首页，推荐） | https://aiinv.github.io/Saltline/ |
+| 低延时 + 一键性能模式 | https://aiinv.github.io/Saltline/?fast=1 |
+| 原版（未做性能优化） | https://aiinv.github.io/Saltline/original.html |
 
-低延时版在原版基础上降低了默认 high 档负载、加快动态分辨率收敛、减少阴影更新频率，并新增 `?fast=1`。原版 V1 保持逐字节未改动。
+低延时版降低了默认 high 档负载、加快动态分辨率收敛、减少阴影更新频率，并新增 `?fast=1`。原版保留原始渲染逻辑，仅做署名替换。
 
 ## 操作
 
