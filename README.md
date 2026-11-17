@@ -10,7 +10,7 @@
 | 低延时版 | https://aiinv.github.io/Saltline/lowlatency.html |
 | 低延时版 + 一键性能模式 | https://aiinv.github.io/Saltline/lowlatency.html?fast=1 |
 
-原版保留原始渲染逻辑，仅做署名替换。低延时版降低了默认 high 档负载、加快动态分辨率收敛、减少阴影更新频率，并新增 `?fast=1`。
+原版保留原始渲染逻辑，低延时版降低了默认 high 档负载、加快动态分辨率收敛、减少阴影更新频率，并新增 `?fast=1`。
 
 ## 模型检视页（九个入口）
 
