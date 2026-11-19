@@ -246,13 +246,13 @@ body { background: var(--ink); color: var(--bone); overflow: hidden; font-family
 kbd { display: inline-block; font: 500 10px/1 var(--f-mono); color: var(--bone); border: 1px solid rgba(232, 228, 218, .45); padding: 3px 4px 2px; margin: 0 1px; min-width: 18px; text-align: center; text-transform: uppercase; }
 
 /* ---- cards: paused / dead / debrief ---- */
-.m-card { left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(430px, calc(100vw - var(--gl) - var(--gr))); max-height: calc(100vh - 24px - var(--sat) - var(--sab)); overflow: auto;
+.m-card { left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(430px, calc(100vw - var(--gl) - var(--gr))); max-height: calc(100vh - 24px - var(--sat) - var(--sab)); overflow-x: hidden; overflow-y: auto;
   padding: 26px 26px 24px; background: var(--plate-solid); border: 1px solid var(--line); border-top: 3px solid var(--signal); }
 .m-card.m-dead { border-top-color: var(--alarm); }
 .m-k { font: 600 12px/1 var(--f-label); letter-spacing: .28em; text-transform: uppercase; color: var(--steel); }
 .m-h { font: 900 clamp(40px, 11vw, 62px)/.86 var(--f-display) !important; letter-spacing: .08em; text-transform: uppercase; margin: 10px 0 12px !important; }
 .m-dead .m-h { color: var(--alarm); }
-.m-debrief .m-h { font-size: clamp(30px, 8.6vw, 44px) !important; white-space: nowrap; }
+.m-debrief .m-h { font-size: clamp(30px, 7.4vw, 38px) !important; white-space: nowrap; }
 .m-line { font: 400 11px/1.5 var(--f-mono); letter-spacing: .04em; color: var(--steel); min-height: 1px; }
 .m-stats > div { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 9px 0 8px; border-top: 1px solid var(--line); }
 .m-stats > div:last-child { border-bottom: 1px solid var(--line); }
