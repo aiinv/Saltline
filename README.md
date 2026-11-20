@@ -9,9 +9,9 @@
 | 原版 | https://aiinv.github.io/Saltline/ |
 | 低延时版 | https://aiinv.github.io/Saltline/lowlatency.html |
 | 低延时版 + 一键性能模式 | https://aiinv.github.io/Saltline/lowlatency.html?fast=1 |
-| 恐龙快跑（独立小游戏） | https://aiinv.github.io/Saltline/dino.html |
+| 恐龙快跑（独立小游戏，已迁至 ERROR 仓库） | https://aiinv.github.io/ERROR/ |
 
-恐龙快跑是从 Chrome 离线页提取修复的独立小游戏：空格／↑／点击屏幕起跳，↓ 下蹲，躲仙人掌和翼手龙。
+恐龙快跑已迁至独立仓库 ERROR：https://github.com/aiinv/ERROR 。从 Chrome 离线页提取修复，空格／↑／点击屏幕起跳，↓ 下蹲，躲仙人掌和翼手龙；已适配手机竖屏。
 
 原版保留原始渲染逻辑，低延时版降低了默认 high 档负载、加快动态分辨率收敛、减少阴影更新频率，并新增 `?fast=1`。
 
