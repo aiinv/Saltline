@@ -6310,8 +6310,8 @@ errors ${window.__errors.length}${window.__errors.length?`
       // 应用到初始关卡
       var init=+(new URLSearchParams(location.search).get("level")||1);
       applyMap(init===2?2:1,true);
-      G.game.menus.show("select");
-    }).catch(function(e){window.__mapErr=String(e&&e.stack||e);G.game.menus.show("select")});
+      G.game.menus.show("title"); // 首屏显示标题页（盐线），"选择关卡"按钮进入选关页
+    }).catch(function(e){window.__mapErr=String(e&&e.stack||e);G.game.menus.show("title")});
 
     function applyMap(n,silent){
       n=(n===2?2:1);curMap=n;
